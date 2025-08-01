@@ -1,48 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link id="mainStyleSheet" rel="stylesheet" href="css/new_styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Sithu Maung | Portfolio</title>
+    <link id="mainStyleSheet" rel="stylesheet" href="css/new_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
+    
+    <header>
+        <div class="container">
+            <div class="logo">MSM</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">About Me</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="technical.html">Technical Portfolio</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hello, I'm Min Sithu Maung</h1>
+                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <p class="hero-description"> Texas A&M University alumni with development experience in health care. </p>
+                    <a href="technical.html" class="btn-primary">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-frame">
+                        <img src="images/myphoto.jpeg" alt="Min Sithu Maung" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <p>  I’m a Houston-based software engineer who just wrapped up my B.S. in
+                    Computer Science at Texas A&M (GPA 3.6, minor in Engineering Project
+                    Management). For the past two years I’ve been the go-to full-stack
+                    developer at <strong>Medical Innovators Company</strong>, where I led a
+                    HIPAA-compliant GenAI triage platform that slashed patient data-entry
+                    time by 30 % and processes 500+ forms every month. I build secure
+                    pipelines end-to-end—from React front ends to FastAPI & MongoDB on AWS—
+                    and run Agile sprints that never miss a release.</p>
+                <!-- <p>I have been working as a Junior Full Stack Developer at Medical Innovators Company (MIC) for a year now. I won first place in the 
+                    <a href="https://codered-artemis-uh.devpost.com" target="_blank">CodeRed Artemis Hackathon</a> which you can learn more about on my Technical Portfolio page.</p> -->
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Texas A&M University</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Experience</h3>
+                        <p>Full Stack Developer</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Achievements</h3>
+                        <p>1st Place Hackathon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/maung888" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/min-sithu-maung-230ab1205" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:minsithumaung888@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2023 Min Sithu Maung. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="functions.js"></script>
-    
-<nav>
-    <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="qualifications.html">Qualifications</a></li>
-        <li><a href="technical.html">Technical Portfolio</a></li>>
-        <!-- <li><a onclick="toggleStyleSheet()">Toggle Style</a></li> -->
-    </ul>
-</nav>
-
-<div class="clearfix"></div>
-
-<div class="container">
-    <img src="images/myphoto.jpeg" class="profile-photo">
-    <div class="about-content">
-        <h1 >About Me</h1>
-        <p >
-            Hello World! I am Min Sithu Maung. I am a Junior Computer Science Student at Texas A&M University with a minor in
-             <a href="https://engineering.tamu.edu/mtde/academics/degrees/undergraduate/engineering-project-management/minor-in-epm.html" target="_blank">
-                Engineering Project Management</a>. 
-            I have been working as a Junior Full Stack Developer at Medical 
-             Innovators Company (MIC) for a year now. I once participated in  <a href="https://codered-artemis-uh.devpost.com" target="_blank">a Hackathon</a> and won first place. I 
-             described about that project in Technical Portfolio Page.  Check out other sections of this website too! 
-        </p>
-    </div>
-</div>
-
-<div class="footer">
-    <div>
-        <!-- social icons by http://simpleicons.org/ -->
-        <a href="https://github.com/maung888" target="_blank"><img src="images/github.svg" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/min-sithu-maung-230ab1205" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-        <a href="mailto:minsithumaung888@gmail.com" target="_blank"><img src="images/gmail.svg" alt="Email"></a>
-       
-    </div>  
-</div>
-
 </body>
 </html>

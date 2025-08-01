@@ -1,70 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link id="mainStyleSheet" rel="stylesheet" href="css/new_styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Portfolio | Min Sithu Maung</title>
+    <link id="mainStyleSheet" rel="stylesheet" href="css/new_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-  <script src="functions.js"></script>
-  
-  <nav>
-    <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li><a href="qualifications.html">Qualifications</a></li>
-        <li><a href="technical.html">Technical Portfolio</a></li>
-    </ul>
-</nav>
+    <header>
+        <div class="container">
+            <div class="logo">MSM</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="technical.html" class="active">Technical Portfolio</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </div>
+    </header>
 
-<h1 class="title-container">
-    Technical Portfolio
-</h2>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Technical Portfolio</h1>
+            <p>Showcase of my development projects and achievements</p>
+        </div>
+    </section>
 
-<div class="container">
-    <img class="project-image" src="images/project1.png">
-    <div class="project-content">
-      <h2>Project 1 (HCSS Dashboard)</h2>
-      <p class="project-description">
-        <a href="https://devpost.com/software/hcss-dashbord" target="_blank"> HCSS Dashboard</a>  is created as a project for CodeRed Artemis Hackathon organized by the University of Houston. 
-         CodeRed Artemis is the biggest hackathon in Houston at that time. Representatives from 
-         <a href="https://www.hcss.com/about-us/" target="_blank">Heavy Construction Systems
-          Specialist (HCSS) </a>H give us the requirements to complete the project. The data was given to us in JSON format, and
-           we have to process that data and display as bar graphs and pie chars. So, our project 
-           is a <a href="https://www.ibm.com/topics/data-visualization#:~:text=Data%20visualization%20is%20the%20representation,that%20is%20easy%20to%20understand." target="_blank"> data visualization </a>
-           project. I was mainly involved in the front-end and marketing part of the project. 
-      </p>
-    </div>
-  </div>
+    <section class="portfolio">
+        <div class="container">
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/project1.png" alt="HCSS Dashboard Project">
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Hackathon Winner</span>
+                    <h2>HCSS Dashboard</h2>
+                    <p class="project-description">
+                        <a href="https://devpost.com/software/hcss-dashbord" target="_blank">HCSS Dashboard</a> was created for the CodeRed Artemis Hackathon organized by the University of Houston. Representatives from 
+                        <a href="https://www.hcss.com/about-us/" target="_blank">Heavy Construction Systems Specialist (HCSS)</a> provided requirements to process JSON data and display it as bar graphs and pie charts.
+                    </p>
+                    <div class="project-details">
+                        <div class="project-role">
+                            <i class="fas fa-user-tie"></i>
+                            <strong>Role:</strong> Frontend Developer & Marketing
+                        </div>
+                        <div class="project-tech">
+                            <i class="fas fa-code"></i>
+                            <strong>Technologies:</strong> JavaScript, D3.js, HTML/CSS
+                        </div>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://devpost.com/software/hcss-dashbord" target="_blank" class="btn-secondary">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-  <div class="container">
-    <div class="project-content">
-      <h2>Project 2 (This Website) </h2>
-      <p class="project-description">
-        I am developing this website for CSCE 315 under Professor Ritchey. This website is intended to boost my professional
-         presence on the internet. As a software developer, having a website where you can share your skillset is crucial.
-         This website contains 5 pages: About Me, Technical Portfolio, Qualifications, Services and AI Page. I used HTML, 
-         CSS, and JavaScript to build this website without using any frameworks. About Me is the landing page if you visit
-          this website. It contains a short introduction to me. The navigation bar has links to all the other pages and
-           the footer has the links to my social networks such as GitHub, LinkedIn, and email. I implemented the same 
-           navigation bar and the footer for the all the pages. The technical portfolio page (this page) contains the 
-           projects I have done. I have displayed 2 projects. The Qualifications page includes a button to download my
-           resume and a comprehensive description of my technical skills. The service section includes the volunteering
-            activities that I have done to contribute my community. The AI page is a page generated by ChatGPT 
-            (an AI language model). That page includes a canvas where you can draw anything you want. You can also reset 
-            the canvas and download the image after you have drawing it.  
-      </p>
-    </div>
-    <img class="project-image" src="images/project2.png">
-  </div>
+              
+                  <!-- GenAI Medical Triage Platform -->
+                  <div class="project">
+                    <div class="project-image">
+                      <img src="images/triage.png" alt="GenAI Medical Triage App">
+                    </div>
+                    <div class="project-content">
+                      <span class="project-tag">Industry Project</span>
+                      <h2>GenAI Medical Triage Platform</h2>
+                      <p class="project-description">
+                        Built at Medical Innovators Company to cut patient data-entry time
+                        by 30 % and flag critical cases in real time.
+                      </p>
+                      <div class="project-details">
+                        <div class="project-role"><i class="fas fa-user-tie"></i>
+                          <strong>Role:</strong> Full-Stack Engineer
+                        </div>
+                        <div class="project-tech"><i class="fas fa-code"></i>
+                          <strong>Tech:</strong> React, FastAPI, LangChain, MongoDB, AWS
+                        </div>
+                      </div>
+                      <div class="project-buttons">
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Demo&nbsp;(TBA)</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Honors Research Portal -->
+                  <div class="project project-alt">
+                    <div class="project-image">
+                      <img src="images/portal.png" alt="Honors Research Portal">
+                    </div>
+                    <div class="project-content">
+                      <span class="project-tag">University Project</span>
+                      <h2>Honors Research Application Portal</h2>
+                      <p class="project-description">
+                        Heroku-hosted site that matches students to faculty openings,
+                        backed by 90 %+ test coverage and CI/CD.
+                      </p>
+                      <div class="project-details">
+                        <div class="project-role"><i class="fas fa-user-tie"></i>
+                          <strong>Role:</strong> Developer &amp; Scrum Master
+                        </div>
+                        <div class="project-tech"><i class="fas fa-code"></i>
+                          <strong>Tech:</strong> Ruby on Rails, PostgreSQL, Heroku
+                        </div>
+                      </div>
+                      <div class="project-buttons">
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Live Link</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Motion-to-Audio Capstone -->
+                  <div class="project">
+                    <div class="project-image">
+                      <img src="images/motionaudio.png" alt="Motion to Audio">
+                    </div>
+                    <div class="project-content">
+                      <span class="project-tag">Capstone</span>
+                      <h2>Motion-to-Audio Conversion</h2>
+                      <p class="project-description">
+                        Converted accelerometer streams into WAV files for Lockheed Martin
+                        research on human–machine interfaces.
+                      </p>
+                      <div class="project-details">
+                        <div class="project-role"><i class="fas fa-user-tie"></i>
+                          <strong>Role:</strong> Team Lead
+                        </div>
+                        <div class="project-tech"><i class="fas fa-code"></i>
+                          <strong>Tech:</strong> Kotlin, C++, Python, Fitbit SDK
+                        </div>
+                      </div>
+                      <div class="project-buttons">
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Repo</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- Automatic Book Page Flipper -->
+                  <div class="project project-alt">
+                    <div class="project-image">
+                      <img src="images/pageflipper.png" alt="Automatic Book Page Flipper">
+                    </div>
+                    <div class="project-content">
+                      <span class="project-tag">Hardware / ML</span>
+                      <h2>Automatic Book Page Flipper</h2>
+                      <p class="project-description">
+                        Voice- and gesture-controlled rig that flips pages with 98 %
+                        accuracy—built for readers with limited mobility.
+                      </p>
+                      <div class="project-details">
+                        <div class="project-role"><i class="fas fa-user-tie"></i>
+                          <strong>Role:</strong> Software &amp; Hardware Engineer
+                        </div>
+                        <div class="project-tech"><i class="fas fa-code"></i>
+                          <strong>Tech:</strong> Raspberry Pi, Python, OpenCV
+                        </div>
+                      </div>
+                      <div class="project-buttons">
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> Video</a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <!-- HCSS Dashboard (existing) -->
+                  <!-- keep your current HCSS card here or swap in this updated description -->
+                </div>
+ 
+              
 
-  <div class="footer">
-    <div>
-        <!-- social icons by http://simpleicons.org/ -->
-        <a href="https://github.com/maung888" target="_blank"><img src="images/github.svg" alt="Github"></a>
-        <a href="https://www.linkedin.com/in/min-sithu-maung-230ab1205" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-        <a href="mailto:minsithumaung888@gmail.com" target="_blank"><img src="images/gmail.svg" alt="Email"></a>
-       
-    </div>  
-</div>
+           
+    </section>
 
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/maung888" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/min-sithu-maung-230ab1205" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:minsithumaung888@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2023 Min Sithu Maung. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="functions.js"></script>
 </body>
 </html>
